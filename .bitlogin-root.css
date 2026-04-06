@@ -1,0 +1,465 @@
+.bitlogin-root {
+  display: flex !important;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.bitlogin-root button {
+  font-family: inherit !important;
+}
+
+#google-login > svg,
+#facebook-login > svg,
+#apple-login > svg,
+#whatsapp-login > svg,
+#microsoft-login > svg,
+#twitter-login > svg,
+#amazon-login > svg,
+#instagram-login > svg,
+#magic_link-login > svg,
+#mobile_app-login > svg,
+#linkedin-login > svg {
+  display: unset !important;
+  vertical-align: unset !important;
+  fill: unset !important;
+  stroke: unset !important;
+  width: unset !important;
+  height: unset !important;
+  transition: unset !important;
+}
+
+#google-login,
+#facebook-login,
+#apple-login,
+#whatsapp-login,
+#microsoft-login,
+#twitter-login,
+#amazon-login,
+#instagram-login,
+#magic_link-login,
+#mobile_app-login,
+#linkedin-login {
+  display: flex !important;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid transparent;
+  justify-content: start;
+  margin: 0;
+  overflow: hidden;
+  padding-inline: 18px;
+  min-width: unset;
+  min-height: unset;
+  transition: all 0.2s ease-in-out;
+  width: 300px;
+}
+
+#google-login.scheme-black,
+#facebook-login.scheme-black,
+#apple-login.scheme-black,
+#whatsapp-login.scheme-black,
+#microsoft-login.scheme-black,
+#twitter-login.scheme-black,
+#amazon-login.scheme-black,
+#instagram-login.scheme-black,
+#magic_link-login.scheme-black,
+#mobile_app-login.scheme-black,
+#linkedin-login.scheme-black {
+  background-color: black;
+  border-color: transparent;
+}
+
+#facebook-login.scheme-black > p,
+#twitter-login.scheme-black > p,
+#apple-login.scheme-black > p,
+#whatsapp-login.scheme-black > p,
+#microsoft-login.scheme-black > p,
+#google-login.scheme-black > p,
+#amazon-login.scheme-black > p,
+#instagram-login.scheme-black > p,
+#magic_link-login.scheme-black > p,
+#mobile_app-login.scheme-black > p,
+#linkedin-login.scheme-black > p {
+  color: white !important;
+}
+
+#google-login.scheme-black:hover,
+#facebook-login.scheme-black:hover,
+#apple-login.scheme-black:hover,
+#whatsapp-login.scheme-black:hover,
+#microsoft-login.scheme-black:hover,
+#twitter-login.scheme-black:hover,
+#amazon-login.scheme-black:hover,
+#instagram-login.scheme-black:hover,
+#magic_link-login.scheme-black:hover,
+#mobile_app-login.scheme-black:hover,
+#linkedin-login.scheme-black:hover {
+  background-color: #3e3e3e;
+  box-shadow: inset 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#google-login.scheme-white,
+#facebook-login.scheme-white,
+#apple-login.scheme-white,
+#whatsapp-login.scheme-white,
+#microsoft-login.scheme-white,
+#twitter-login.scheme-white,
+#amazon-login.scheme-white,
+#instagram-login.scheme-white,
+#magic_link-login.scheme-white,
+#mobile_app-login.scheme-white,
+#linkedin-login.scheme-white {
+  background-color: white;
+  border-color: black;
+}
+
+#facebook-login.scheme-white > p,
+#twitter-login.scheme-white > p,
+#apple-login.scheme-white > p,
+#whatsapp-login.scheme-white > p,
+#microsoft-login.scheme-white > p,
+#google-login.scheme-white > p,
+#amazon-login.scheme-white > p,
+#instagram-login.scheme-white > p,
+#magic_link-login.scheme-white > p,
+#mobile_app-login.scheme-white > p,
+#linkedin-login.scheme-white > p {
+  color: black !important;
+}
+
+#google-login.scheme-white:hover,
+#apple-login.scheme-white:hover,
+#facebook-login.scheme-white:hover,
+#whatsapp-login.scheme-white:hover,
+#microsoft-login.scheme-white:hover,
+#twitter-login.scheme-white:hover,
+#amazon-login.scheme-white:hover,
+#instagram-login.scheme-white:hover,
+#magic_link-login.scheme-white:hover,
+#mobile_app-login.scheme-white:hover,
+#linkedin-login.scheme-white:hover {
+  background-color: #cccccc;
+  box-shadow: inset 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Start region scheme match */
+#google-login.scheme-match {
+  background-color: white;
+  border-color: #dddddd;
+}
+
+#facebook-login.scheme-match {
+  background-color: #1877f2;
+}
+
+#apple-login.scheme-match {
+  background-color: #000000;
+}
+
+#whatsapp-login.scheme-match {
+  background-color: #25d366;
+}
+
+#microsoft-login.scheme-match {
+  background-color: #2f2f2f;
+  border-color: #2f2f2f;
+}
+
+#twitter-login.scheme-match,
+#magic_link-login.scheme-match {
+  background-color: #000000;
+  border-color: #000000;
+}
+
+#amazon-login.scheme-match {
+  background-color: #ff9900;
+  border-color: transparent;
+}
+
+#instagram-login.scheme-match,
+#instagram-login.scheme-match-outline {
+  position: relative;
+  background: #ffffff;
+  border: 1px solid transparent;
+  position: relative;
+  z-index: 1;
+}
+
+#instagram-login.scheme-match::before,
+#instagram-login.scheme-match-outline::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(
+    to right,
+    #f46028,
+    #f51689,
+    #e7035b,
+    #dc02b3,
+    #af00ce,
+    #6713ef
+  );
+  border-radius: inherit;
+  padding: 1px;
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
+
+#mobile_app-login.scheme-match {
+  background-color: #fd823e;
+  border-color: #fd823e;
+}
+
+#linkedin-login.scheme-match {
+  background-color: #0a66c2;
+  border-color: #0a66c2;
+}
+
+#facebook-login.scheme-match > p,
+#twitter-login.scheme-match > p,
+#apple-login.scheme-match > p,
+#whatsapp-login.scheme-match > p,
+#microsoft-login.scheme-match > p,
+#magic_link-login.scheme-match > p,
+#mobile_app-login.scheme-match > p,
+#linkedin-login.scheme-match > p {
+  color: white !important;
+}
+
+#google-login.scheme-match > p,
+#amazon-login.scheme-match > p {
+  color: black;
+}
+
+#instagram-login.scheme-match > p,
+#instagram-login.scheme-match-outline > p {
+  background: linear-gradient(
+    to right,
+    #f46028,
+    #f51689,
+    #e7035b,
+    #dc02b3,
+    #af00ce,
+    #6713ef
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#google-login.scheme-match:hover {
+  background-color: #cccccc;
+  border-color: #9a9a9a;
+  box-shadow: inset 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+#facebook-login.scheme-match:hover {
+  background-color: #135fc2;
+  box-shadow: inset 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+#whatsapp-login.scheme-match:hover {
+  background-color: #1ea952;
+  box-shadow: inset 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+#apple-login.scheme-match:hover,
+#twitter-login.scheme-match:hover,
+#microsoft-login.scheme-match:hover,
+#magic_link-login.scheme-match:hover {
+  background-color: #3e3e3e;
+  box-shadow: inset 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+#amazon-login.scheme-match:hover {
+  background-color: #cc7a00;
+  box-shadow: inset 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+#instagram-login.scheme-match:hover {
+  background-color: #cccccc;
+  box-shadow: inset 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+#mobile_app-login.scheme-match:hover {
+  background-color: #ff9961;
+  box-shadow: inset 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+#linkedin-login.scheme-match:hover {
+  background-color: #1c78d4;
+  box-shadow: inset 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* End region scheme match */
+
+/* Start region scheme matchOutline */
+#google-login.scheme-match-outline {
+  background-color: white;
+  border-color: black;
+}
+
+#google-login.scheme-match-outline > p {
+  color: black !important;
+}
+
+#facebook-login.scheme-match-outline {
+  background-color: white;
+  border-color: #1778f2;
+}
+
+#facebook-login.scheme-match-outline > p {
+  color: #1778f2 !important;
+}
+
+#apple-login.scheme-match-outline {
+  background-color: white;
+  border-color: black;
+}
+
+#apple-login.scheme-match-outline > p {
+  color: black !important;
+}
+
+#whatsapp-login.scheme-match-outline {
+  background-color: white;
+  border-color: #25d366;
+}
+
+#whatsapp-login.scheme-match-outline > p {
+  color: #25d366 !important;
+}
+
+#microsoft-login.scheme-match-outline {
+  background-color: #ffffff;
+  border-color: #2f2f2f;
+}
+
+#microsoft-login.scheme-match-outline > p {
+  color: #2f2f2f !important;
+}
+
+#twitter-login.scheme-match-outline,
+#magic_link-login.scheme-match-outline {
+  background-color: #ffffff;
+  border-color: #000000;
+}
+
+#twitter-login.scheme-match-outline > p,
+#magic_link-login.scheme-match-outline > p {
+  color: #000000 !important;
+}
+
+#amazon-login.scheme-match-outline {
+  background-color: white;
+  border-color: #ff9900;
+}
+
+#amazon-login.scheme-match-outline > p {
+  color: #ff9900 !important;
+}
+
+#mobile_app-login.scheme-match-outline {
+  background-color: #ffffff;
+  border-color: #fd823e;
+}
+
+#mobile_app-login.scheme-match-outline > p {
+  color: #fd823e !important;
+}
+
+#linkedin-login.scheme-match-outline {
+  background-color: #ffffff;
+  border-color: #0a66c2;
+}
+
+#linkedin-login.scheme-match-outline > p {
+  color: #0a66c2 !important;
+}
+
+#google-login.scheme-match-outline:hover,
+#apple-login.scheme-match-outline:hover,
+#facebook-login.scheme-match-outline:hover,
+#whatsapp-login.scheme-match-outline:hover,
+#microsoft-login.scheme-match-outline:hover,
+#twitter-login.scheme-match-outline:hover,
+#amazon-login.scheme-match-outline:hover,
+#instagram-login.scheme-match-outline:hover,
+#magic_link-login.scheme-match-outline:hover,
+#mobile_app-login.scheme-match-outline:hover,
+#linkedin-login.scheme-match-outline:hover {
+  background-color: #cccccc;
+  box-shadow: inset 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* End region scheme matchOutline */
+
+#google-login > p,
+#facebook-login > p,
+#apple-login > p,
+#whatsapp-login > p,
+#microsoft-login > p,
+#twitter-login > p,
+#amazon-login > p,
+#instagram-login > p,
+#magic_link-login > p,
+#mobile_app-login > p,
+#linkedin-login > p {
+  margin: unset;
+  font-size: var(--font-body-size) !important;
+}
+
+/* #google-login {
+  margin-top: 24px;
+} */
+
+#google-login::after,
+#facebook-login::after,
+#apple-login::after,
+#whatsapp-login::after,
+#microsoft-login::after,
+#twitter-login::after,
+#amazon-login::after,
+#instagram-login::after,
+#magic_link-login::after,
+#mobile_app-login::after,
+#linkedin-login::after {
+  content: unset;
+}
+
+.skeleton-box {
+  height: 28px;
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: #dddbdd;
+}
+
+.skeleton-root {
+  margin-block: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.skeleton-box::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: translateX(-100%);
+  background-image: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 0.2),
+    rgba(255, 255, 255, 0.5),
+    rgba(255, 255, 255, 0)
+  );
+  animation: shimmer 2s infinite;
+  --webkit-animation: shimmer 2s infinite;
+  content: "";
+}
+
+@keyframes shimmer {
+  100% {
+    transform: translateX(100%);
+  }
+}
